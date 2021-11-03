@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: hsl(229, 57%, 11%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 24rem;
+}
+
+.Frist-div {
+    background: hsl(228, 56%, 26%);
+    display: flex;
+    width: 408px;
+    height: 222px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 12px 7rem 12px 12px;
+    margin-right: 18px;
+    padding: 11px;
+    padding-left: 0;
+    flex-direction: column;
+}
+
+.logo {
+    width: 42%;
+    margin: auto;
+    margin-left: 44px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    margin: auto;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+
+.icon {
+    margin: 0 6px;
+    padding: 18px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 1rem;
+}
+
+.img-icon {
+    width: 27px;
+    height: 100%;
+}
+
+.Second-div {
+    background: hsl(228, 56%, 26%);
+    display: flex;
+    position: relative;
+    width: 40%;
+    flex-direction: column;
+    padding: 56px;
+    border-radius: 12px;
+    font-size: larger;
+    color: hsl(243, 100%, 93%);
+}
+
+.talk-bubble {
+    background: #fff;
+    width: 205px;
+    border-radius: 19px 20px 0px 20px;
+    padding: 2rem 1rem;
+    line-height: 24px;
+    position: relative;
+    font-size: 18px;
+    position: absolute;
+    top: -62px;
+    right: 49px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.talk-bubble-num {
+    font-size: xxx-large;
+    color: hsl(229, 57%, 11%);
+}
+
+.talk-bubble-ste {
+    Font-size: 20px;
+    color: hsl(229, 7%, 55%);
+}
+
+.tri-right.right-in:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    bottom: -27px;
+    border: 17px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+
+.loading {
+    width: auto;
+    padding: 4px;
+    margin: 14px 0;
+    background: hsl(243, 100%, 93%);
+    border-radius: 11px;
+}
+
+.loading-line {
+    background: linear-gradient( 45deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 7px;
+    width: 70%;
+    position: relative;
+    border-radius: 11px;
+}
+
+.loading-point {
+    background: hsl(243, 100%, 93%);
+    padding: 0px;
+    width: 10px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 1.1px;
+}
+
+.loading-dis {
+    display: flex;
+    color: hsl(243, 100%, 93%);
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.background-img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+@media (min-width: 1023px) {
+    .background-img-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+    .Frist-div {
+        margin: 0px 0px 20px 0px;
+        width: 343px;
+    }
+    .Second-div {
+        min-width: 340px;
+    }
+    .talk-bubble {
+        top: 175px;
+        right: 104px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .tri-right.right-in:after {
+        display: none;
+    }
+    .background-img {
+        display: none;
+    }
+    .background-img-mobile {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
